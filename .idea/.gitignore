@@ -1,0 +1,14 @@
+/shelf/
+/uiDesigner.xml
+/workspace.xml
+/modules.xml
+/misc.xml
+/Products.iml
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
