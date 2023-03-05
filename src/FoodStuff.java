@@ -1,9 +1,12 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 public class FoodStuff extends Product{
 
     /**Срок годности*/
-    private String shelfLive;
+
+    private Calendar calendar;
     private static final Random r = new Random();
     private static int titleNumber;
     static {
@@ -16,11 +19,10 @@ public class FoodStuff extends Product{
      * @param price     цена
      * @param quantity  количество
      * @param unit      единица измерения
-     * @param shelfLive срок годности
      */
-    private FoodStuff(String title, double price, short quantity, String unit, String shelfLive) {
+    public FoodStuff(String title, double price, short quantity, String unit) {
         super(title, price, quantity, unit);
-        this.shelfLive = shelfLive;
+        this.calendar = new GregorianCalendar(2023, 3, 25);
     }
 
     /**
@@ -28,14 +30,16 @@ public class FoodStuff extends Product{
      */
     public FoodStuff(){
         this(String.format("Food#%d", ++FoodStuff.titleNumber),
-                r.nextDouble(), (short) r.nextInt(50), "kg", "09-05-2023");
+                r.nextDouble(), (short) r.nextInt(50), "kg");
     }
 
 
     @Override
     public String toString() {
-        return String.format("%s Shelf Live: %s;\n",
+        return String.format("%s Shelf Live: %s-%s-%s;\n",
                 super.toString(),
-                this.shelfLive);
+                this.calendar.get(Calendar.YEAR),
+                this.calendar.get(Calendar.MONTH),
+                this.calendar.get(Calendar.DAY_OF_MONTH));
     }
 }
