@@ -5,7 +5,7 @@ public class Product {
     private double price;
     private short quantity;
     private final String unit;
-    private final static Random r = new Random();
+    protected final static Random r = new Random();
     private static int titleNumber;
     static {
         Product.titleNumber = 0;
