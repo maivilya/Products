@@ -26,7 +26,8 @@ public class Bread extends FoodStuff{
      */
     public Bread() {
         this(String.format("Bread#%d", ++Bread.titleNumber),
-                r.nextDouble(), (short) r.nextInt(50), "kg", "wheat");
+                r.nextDouble(), (short) r.nextInt(50),
+                "mg", "wheat");
     }
 
     @Override
