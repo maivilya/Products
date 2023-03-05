@@ -3,7 +3,6 @@ import java.util.Random;
 public class DairyProduct extends FoodStuff {
 
     protected String type;
-    private final static Random r = new Random();
     private static int titleNumber;
 
     static {

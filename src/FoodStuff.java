@@ -7,7 +7,6 @@ public class FoodStuff extends Product{
     /**Срок годности*/
 
     private Calendar calendar;
-    private static final Random r = new Random();
     private static int titleNumber;
     static {
         FoodStuff.titleNumber = 0;

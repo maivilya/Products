@@ -4,7 +4,6 @@ public class Milk extends DairyProduct{
 
     /**жирность*/
     private byte fatness;
-    private final static Random r = new Random();
     private static int titleNumber;
 
     static {
@@ -29,7 +28,7 @@ public class Milk extends DairyProduct{
      * Конструктор, создающий продукт по умолчанию.
      */
     public Milk() {
-        this(String.format("Dairy#%d", ++Milk.titleNumber),
+        this(String.format("Milk#%d", ++Milk.titleNumber),
                 r.nextDouble(), (short) r.nextInt(50),
                 "kg",(byte) r.nextInt(20));
     }
