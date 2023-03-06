@@ -31,6 +31,10 @@ public class ToiletPaper extends Hygiene{
                 (byte) r.nextInt(2), (byte)r.nextInt(3));
     }
 
+    public void setLayersNumber(byte layersNumber) {
+        this.layersNumber = layersNumber;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Layers: %d;\n",

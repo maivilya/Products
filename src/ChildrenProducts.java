@@ -32,6 +32,14 @@ public class ChildrenProducts extends Product{
         this.hyperallergenicity = false;
     }
 
+    public void setMinAge(byte minAge) {
+        this.minAge = minAge;
+    }
+
+    public void setHyperallergenicity(boolean hyperallergenicity) {
+        this.hyperallergenicity = hyperallergenicity;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Minimal Age to use: %d;\n Hyperallergenicity: %b;\n",

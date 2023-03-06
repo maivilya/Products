@@ -30,6 +30,10 @@ public class Bread extends FoodStuff{
                 "mg", "wheat");
     }
 
+    public void setFlourType(String flourType) {
+        this.flourType = flourType;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Flour Type: %s;\n",

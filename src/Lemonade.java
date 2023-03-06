@@ -27,7 +27,7 @@ public class Lemonade extends Drinks{
     public Lemonade() {
         this(String.format("Lemonade#%d", ++Lemonade.titleNumber),
                 r.nextDouble(), (short)r.nextInt(50), "liter",
-                0.3, "mango");
+                r.nextDouble(), "mango");
     }
 
     @Override

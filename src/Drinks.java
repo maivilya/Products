@@ -29,14 +29,15 @@ public class Drinks extends Product{
      * Конструктор, создающий продукт по умолчанию.
      */
     public Drinks() {
-        this(String.format("Title#%d", ++Drinks.titleNumber),
-                r.nextDouble(), (short) r.nextInt(50), "liter", 0.3);
+        this(String.format("Drinks#%d", ++Drinks.titleNumber),
+                r.nextDouble(), (short) r.nextInt(50), "liter",
+                r.nextDouble());
 
     }
 
     @Override
     public String toString() {
-        return String.format("%s Volume: %f%s;\n Shelf Live: %s-%s-%s;\n",
+        return String.format("%s Volume: %.2f %s;\n Shelf Live: %s-%s-%s;\n",
                 super.toString(),
                 this.volume,
                 "lit",

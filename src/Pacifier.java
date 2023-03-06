@@ -32,6 +32,10 @@ public class Pacifier extends ChildrenProducts {
         this.hyperallergenicity = false;
     }
 
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Material: %s;\n",

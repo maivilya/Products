@@ -30,6 +30,10 @@ public class DairyProduct extends FoodStuff {
                 r.nextDouble(), (short) r.nextInt(50), "kg");
     }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Type: %s;\n",

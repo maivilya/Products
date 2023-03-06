@@ -44,6 +44,18 @@ public class Diaper extends ChildrenProducts {
         this.hyperallergenicity = false;
     }
 
+    public void setMinWeight(byte minWeight) {
+        this.minWeight = minWeight;
+    }
+
+    public void setMaxWeight(byte maxWeight) {
+        this.maxWeight = maxWeight;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Size: %s;\n Minimal Weight to use: %d;\n Maximal Weight to use: %d;\n Type: %s;\n",

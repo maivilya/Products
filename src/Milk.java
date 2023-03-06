@@ -33,6 +33,10 @@ public class Milk extends DairyProduct{
                 "liter",(byte) r.nextInt(20));
     }
 
+    public void setFatness(byte fatness) {
+        this.fatness = fatness;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Fatness: %d%s\n",

@@ -29,6 +29,10 @@ public class Hygiene extends Product{
                 (byte) r.nextInt(2));
     }
 
+    public void setQuantityPerPackage(byte quantityPerPackage) {
+        this.quantityPerPackage = quantityPerPackage;
+    }
+
     @Override
     public String toString() {
         return String.format("%s Quantity in package: %d%s;\n",
