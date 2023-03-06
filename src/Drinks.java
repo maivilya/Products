@@ -30,7 +30,7 @@ public class Drinks extends Product{
      */
     public Drinks() {
         this(String.format("Drinks#%d", ++Drinks.titleNumber),
-                r.nextDouble(), (short) r.nextInt(50), "liter",
+                r.nextDouble(), (short) r.nextInt(50), "liters",
                 r.nextDouble());
 
     }
@@ -40,7 +40,7 @@ public class Drinks extends Product{
         return String.format("%s Volume: %.2f %s;\n Shelf Live: %s-%s-%s;\n",
                 super.toString(),
                 this.volume,
-                "lit",
+                "liters",
                 this.calendar.get(Calendar.YEAR),
                 this.calendar.get(Calendar.MONTH),
                 this.calendar.get(Calendar.DAY_OF_MONTH));
