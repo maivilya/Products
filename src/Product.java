@@ -37,11 +37,10 @@ public class Product {
 
     @Override
     public String toString() {
-        return String.format("%s %s:\n Price: %.2f$;\n Quantity: %d;\n Unit: %s;\n",
+        return String.format("%s %s:\n Price: %.2f$;\n Quantity: %d;\n",
                 this.getClass().getSimpleName(),
                 this.title,
                 this.price,
-                this.quantity,
-                this.unit);
+                this.quantity);
     }
 }
